@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ./BiddingSDK/libs/kssdk-ct-3.3.63-publishRelease-03479db44d.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4595978ba7beee5668a003c905bc3e8d/jetified-kssdk-ct-3.3.63-publishRelease-03479db44d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4595978ba7beee5668a003c905bc3e8d/jetified-kssdk-ct-3.3.63-publishRelease-03479db44d/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4595978ba7beee5668a003c905bc3e8d/jetified-kssdk-ct-3.3.63-publishRelease-03479db44d/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

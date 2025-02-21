@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="168dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="3dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_4">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/item_iv_card_child_icon"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/shape_bg_gray_radius_5dp"
+            android:contentDescription="@string/iv"
+            android:scaleType="centerCrop" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:visibility="gone"
+            android:id="@+id/item_tv_card_child_up_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shape_card_bottom_bg_5dp"
+            android:ellipsize="end"
+            android:gravity="center|end"
+            android:includeFontPadding="false"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/up_title"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_tv_card_child_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/dp_4"
+        android:ellipsize="end"
+        android:gravity="center|start"
+        android:includeFontPadding="false"
+        android:paddingTop="4dp"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:autoSizeTextType="uniform"
+        tools:text="风语咒" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_tv_card_child_vod_blurb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/dp_4"
+        android:ellipsize="end"
+        android:gravity="center|start"
+        android:singleLine="true"
+        android:textColor="@color/gray_999"
+        android:textSize="12sp"
+        tools:text="风语咒" />
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/payacbj2"
+    android:orientation="vertical"
+    tools:context=".ui.pay.PayActivity">
+
+    <LinearLayout
+        android:id="@+id/payacbj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_orange_to_light_top"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/iv_task_back"
+                android:layout_width="14dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_title_back2" />
+
+            <TextView
+                android:id="@+id/tv_task_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="VIP中心"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_large" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/bg_vip">
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/aliceBlue"
+            android:textSize="@dimen/font_large"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/appname"
+            android:src="@drawable/payvip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:text="尊享无限时观看全部影视"
+            android:textColor="#D5D6D6"
+            android:textSize="@dimen/font_smaller" />
+
+        <TextView
+            android:id="@+id/tvExpireTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="95dp"
+            android:text="到期时间 2019-05-29 11:50:03"
+            android:textColor="@color/aliceBlue"
+            android:textSize="@dimen/font_smaller" />
+
+        <ImageView
+            android:id="@+id/tvAvator"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_default_avator" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tvAvator"
+            android:layout_toRightOf="@id/tvAvator"
+            android:text="默认会员"
+            android:textColor="@color/aliceBlue"
+            android:textSize="@dimen/font_smaller" />
+
+
+        <RelativeLayout
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/tvPointsimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+
+                android:gravity="center"
+                android:src="@drawable/jifen" />
+
+            <TextView
+                android:id="@+id/tvPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/tvPointsimg"
+                android:text="@string/remaining_points"
+                android:textColor="@color/aliceBlue"
+                android:textSize="@dimen/font_smaller" />/>
+
+
+            <TextView
+                android:id="@+id/tvCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:text="@string/remaining_coin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_smaller"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="5dp"
+        app:tabPaddingStart="5dp"
+        app:tabIndicatorFullWidth="false"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance2"
+        app:tabTextColor="@color/gray_999"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

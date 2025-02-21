@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.withdraw.GoldWithdrawActivitySkin">
+
+    <RelativeLayout
+        android:id="@+id/b11g"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/color_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/iv"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_title_back2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/ghostWhite"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_large"
+            android:text="主题切换"/>
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/mmm8"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/lanbai"
+                    android:id="@+id/dyl"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="原始蓝"/>
+
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.1"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/t100"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="20dp"
+                    android:background="@drawable/uiguan"
+
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/xian" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/mmm7"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/xingkonghui"
+                    android:id="@+id/xingkong"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="暗夜紫"/>
+
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.1"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/t88"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="20dp"
+                    android:background="@drawable/uiguan"
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/xian" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/qd"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+
+        android:text=""/>
+
+
+</LinearLayout>

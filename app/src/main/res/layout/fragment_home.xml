@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6"
+    tools:context=".ui.home.HomeFragment">
+
+    <FrameLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/fragmentTop"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <!--        android:background="@color/colorAccent"-->
+
+        <ImageView
+            android:id="@+id/iv_home_top_bg"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/homebj_01"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/ll_home_bar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="-3dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/iv"
+                android:paddingLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_sk" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="20dp"
+                android:background="#00FFFFFF"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:tabIndicatorColor="@color/textColor"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="2dp"
+                app:tabMinWidth="1dp"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="10dp"
+                app:tabPaddingStart="10dp"
+                app:tabPaddingTop="10dp"
+                app:tabSelectedTextColor="@color/textColor"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                app:tabTextColor="@color/textColor" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/wqddg_line"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_skip"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="@dimen/dp_10">
+
+                    <com.sunfusheng.marqueeview.MarqueeView
+                        android:id="@+id/tv_home_seek"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawablePadding="15dp"
+                        android:ellipsize="marquee"
+                        android:gravity="center_vertical|start"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="@string/seek"
+                        android:textSize="@dimen/font_normal"
+                        app:mvTextColor="@color/textColor"
+                        tools:ignore="NestedWeights,SpUsage" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_shousuo2" />
+                    </com.sunfusheng.marqueeview.MarqueeView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_home_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_skip"
+                    android:drawableStart="@drawable/ic_all"
+                    android:gravity="center"
+                    android:drawablePadding="1dp"
+                    android:paddingLeft="19dp"
+                    android:paddingRight="19dp"
+                    android:text="@string/all"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/font_normal"
+                    android:visibility="visible" />
+
+                <ImageView
+
+                    android:id="@+id/iv_home_history"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_bofangjilu1"
+                    android:contentDescription="@string/iv"/>
+
+
+                <ImageView
+
+                    android:id="@+id/iv_home_fankui"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_liuyan1"
+                    android:contentDescription="@string/iv"/>
+
+
+                <ImageView
+
+                    android:id="@+id/iv_home_vip"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:background="@drawable/ic_vip"
+                    android:contentDescription="@string/iv"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTop"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conPlayHis"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_skip2"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/btnAppMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imgClosHis"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_close22"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvHis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="上次观看：斗罗大陆 第一集" />
+
+            <TextView
+                android:id="@+id/tvHis1"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@drawable/bg_red"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="继续播放"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vod.iml" filepath="$PROJECT_DIR$/.idea/modules/vod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BiddingSDK/vod.BiddingSDK.iml" filepath="$PROJECT_DIR$/.idea/modules/BiddingSDK/vod.BiddingSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/vod.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/vod.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/av/vod.av.iml" filepath="$PROJECT_DIR$/.idea/modules/av/vod.av.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/vod.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/vod.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dkplayer-java/vod.dkplayer-java.iml" filepath="$PROJECT_DIR$/.idea/modules/dkplayer-java/vod.dkplayer-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dkplayer-players/vod.dkplayer-players.iml" filepath="$PROJECT_DIR$/.idea/modules/dkplayer-players/vod.dkplayer-players.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dkplayer-players/exo/vod.dkplayer-players.exo.iml" filepath="$PROJECT_DIR$/.idea/modules/dkplayer-players/exo/vod.dkplayer-players.exo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dkplayer-players/ijk/vod.dkplayer-players.ijk.iml" filepath="$PROJECT_DIR$/.idea/modules/dkplayer-players/ijk/vod.dkplayer-players.ijk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dkplayer-ui/vod.dkplayer-ui.iml" filepath="$PROJECT_DIR$/.idea/modules/dkplayer-ui/vod.dkplayer-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dkplayer-videocache/vod.dkplayer-videocache.iml" filepath="$PROJECT_DIR$/.idea/modules/dkplayer-videocache/vod.dkplayer-videocache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ijkplayer-arm64/vod.ijkplayer-arm64.iml" filepath="$PROJECT_DIR$/.idea/modules/ijkplayer-arm64/vod.ijkplayer-arm64.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ijkplayer-armv5/vod.ijkplayer-armv5.iml" filepath="$PROJECT_DIR$/.idea/modules/ijkplayer-armv5/vod.ijkplayer-armv5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ijkplayer-armv7a/vod.ijkplayer-armv7a.iml" filepath="$PROJECT_DIR$/.idea/modules/ijkplayer-armv7a/vod.ijkplayer-armv7a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ijkplayer-java/vod.ijkplayer-java.iml" filepath="$PROJECT_DIR$/.idea/modules/ijkplayer-java/vod.ijkplayer-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ijkplayer-x86/vod.ijkplayer-x86.iml" filepath="$PROJECT_DIR$/.idea/modules/ijkplayer-x86/vod.ijkplayer-x86.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/m3u8library/vod.m3u8library.iml" filepath="$PROJECT_DIR$/.idea/modules/m3u8library/vod.m3u8library.iml" />
+    </modules>
+  </component>
+</project>

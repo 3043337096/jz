@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/uuxxyy2"
+    android:paddingLeft="18dp"
+    android:paddingTop="20dp"
+    android:paddingRight="18dp"
+    tools:context=".ui.pay.PayFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textvip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+                    android:text="充值VIP"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/week_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg_white_radius_8dp2"
+                    android:gravity="center|top"
+
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <TextView
+                        android:id="@+id/day_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7天"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_smaller"
+                        android:textStyle="bold"
+                        tools:ignore="SpUsage" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_large"
+                            android:textStyle="bold"
+                            tools:ignore="SpUsage" />
+
+                        <TextView
+                            android:id="@+id/week_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_large"
+                            android:textStyle="bold"
+                            tools:ignore="SpUsage" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/vip_tv_week_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="折合1元一天"
+
+                        android:textColor="@color/darkCyan"
+                        android:textSize="@dimen/font_smallest"
+                        tools:ignore="SpUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/shape_bg_white_radius_8dp"
+                        android:gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="3dp"
+                        android:text="点击购买"
+                        android:textColor="@color/aliceBlue"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/month_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg_white_radius_8dp2"
+                    android:gravity="center|top"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1个月"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_smaller"
+                        android:textStyle="bold"
+                        tools:ignore="SpUsage" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_large"
+                            android:textStyle="bold"
+                            tools:ignore="SpUsage" />
+
+                        <TextView
+                            android:id="@+id/month_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_large"
+                            android:textStyle="bold"
+                            tools:ignore="SpUsage" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/vip_tv_month_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="折合1元一天"
+                        android:textColor="@color/darkCyan"
+                        android:textSize="@dimen/font_smallest"
+                        tools:ignore="SpUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/shape_bg_white_radius_8dp"
+                        android:gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="3dp"
+                        android:text="点击购买"
+                        android:textColor="@color/aliceBlue"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/year_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg_white_radius_8dp2"
+                    android:gravity="center|top"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12个月"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_smaller"
+                        android:textStyle="bold"
+                        tools:ignore="SpUsage" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_large"
+                            android:textStyle="bold"
+                            tools:ignore="SpUsage" />
+
+                        <TextView
+                            android:id="@+id/year_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="98"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_large"
+                            android:textStyle="bold"
+                            tools:ignore="SpUsage" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/vip_tv_year_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="折合1元一天"
+                        android:textColor="@color/darkCyan"
+                        android:textSize="@dimen/font_smallest"
+                        tools:ignore="SpUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/shape_bg_white_radius_8dp"
+                        android:gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="3dp"
+                        android:text="点击购买"
+                        android:textColor="@color/aliceBlue"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请选择您需要购买的套餐"
+                    android:textColor="@color/darkCyan"
+                    android:textSize="@dimen/font_small"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#ececec" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="#ececec"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_recharge_amount"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="输入卡密"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    tools:ignore="SpUsage" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black" />
+
+                <EditText
+                    android:id="@+id/etCardPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="输入或粘贴您购买到的卡密"
+                    android:textColor="@color/gray_999"
+                    android:textSize="@dimen/font_small"
+                    tools:ignore="SpUsage" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卡密购买链接: "
+                    android:textColor="#F44336"
+                    android:textSize="@dimen/font_smaller" />
+
+                <TextView
+                    android:id="@+id/tvOnlinePay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="点我去购买>"
+                    android:textColor="@color/gray_999"
+                    android:textSize="@dimen/font_smaller" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_login"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="立即充值"
+                android:textColor="#FFFFFF"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+
+                android:src="@drawable/viptq" />
+
+
+            <TextView
+                android:id="@+id/tvHit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="1元可兑换10个积分"
+                android:textColor="@color/gray_999"
+                android:textSize="@dimen/font_smaller"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
